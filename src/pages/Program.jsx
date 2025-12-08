@@ -69,17 +69,17 @@ function Program() {
                 <div className="container">
                     <div className="flow-diagram">
                         <div className="flow-step">
-                            <span className="flow-icon">🌱</span>
+                            <img src="/seed.png" alt="살펴봄" className="flow-image" />
                             <span className="flow-label">살펴봄</span>
                         </div>
                         <div className="flow-arrow">→</div>
                         <div className="flow-step">
-                            <span className="flow-icon">💭</span>
+                            <img src="/think.png" alt="생각해봄" className="flow-image" />
                             <span className="flow-label">생각해봄</span>
                         </div>
                         <div className="flow-arrow">→</div>
                         <div className="flow-step">
-                            <span className="flow-icon">🌸</span>
+                            <img src="/bloom.png" alt="피워봄" className="flow-image" />
                             <span className="flow-label">피워봄</span>
                         </div>
                     </div>
