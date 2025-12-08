@@ -4,7 +4,7 @@ function Tools() {
     const tools = [
         {
             id: 'activity-code',
-            icon: '🔑',
+            image: '/tool_code.png',
             title: '활동코드 기반 접속',
             subtitle: '간편하고 안전한 접속',
             description: '복잡한 로그인 없이 교사가 부여한 활동코드만으로 학습 도구에 접속합니다.',
@@ -18,7 +18,7 @@ function Tools() {
         },
         {
             id: 'image-gen',
-            icon: '🖼️',
+            image: '/tool_image.png',
             title: '교사 승인 이미지 생성',
             subtitle: '안전한 AI 이미지 생성',
             description: '학생이 입력한 프롬프트와 생성된 이미지를 교사가 승인하는 이중 안전 시스템입니다.',
@@ -32,7 +32,7 @@ function Tools() {
         },
         {
             id: 'ai-docent',
-            icon: '🎙️',
+            image: '/tool_docent.png',
             title: 'AI 도슨트',
             subtitle: '맞춤형 감상 안내',
             description: '학습자의 감상에 반응하여 사고를 확장하는 맞춤형 발문을 제공합니다.',
@@ -46,7 +46,7 @@ function Tools() {
         },
         {
             id: 'artwork-regen',
-            icon: '✨',
+            image: '/tool_regen.png',
             title: '작품 재구성 도구',
             subtitle: '창의적 표현 지원',
             description: '학생의 해석을 바탕으로 명화를 재창조하거나 캐릭터를 새롭게 구성합니다.',
@@ -109,7 +109,7 @@ function Tools() {
                                 className={`tool-card tool-${tool.color}`}
                                 style={{ animationDelay: `${index * 0.1}s` }}
                             >
-                                <div className="tool-icon">{tool.icon}</div>
+                                <img src={tool.image} alt={tool.title} className="tool-image" />
                                 <div className="tool-content">
                                     <h3>{tool.title}</h3>
                                     <span className="tool-subtitle">{tool.subtitle}</span>

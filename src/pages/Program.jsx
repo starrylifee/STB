@@ -4,7 +4,7 @@ function Program() {
     const stages = [
         {
             id: 'seed',
-            icon: '🌱',
+            image: '/seed.png',
             title: 'S.E.E.D',
             subtitle: '살펴봄',
             color: 'green',
@@ -18,7 +18,7 @@ function Program() {
         },
         {
             id: 'think',
-            icon: '💭',
+            image: '/think.png',
             title: 'T.H.I.N.K',
             subtitle: '생각해봄',
             color: 'blue',
@@ -33,7 +33,7 @@ function Program() {
         },
         {
             id: 'bloom',
-            icon: '🌸',
+            image: '/bloom.png',
             title: 'B.L.O.O.M',
             subtitle: '피워봄',
             color: 'pink',
@@ -93,7 +93,7 @@ function Program() {
                         <div className="container">
                             <div className="stage-header">
                                 <div className="stage-number">Stage {index + 1}</div>
-                                <div className="stage-icon">{stage.icon}</div>
+                                <img src={stage.image} alt={stage.subtitle} className="stage-image" />
                                 <h2>{stage.title}</h2>
                                 <h3>{stage.subtitle}</h3>
                                 <p>{stage.description}</p>
@@ -129,7 +129,7 @@ function Program() {
 
                     <div className="grid grid-2">
                         <div className="card ai-card">
-                            <div className="ai-card-icon">🧠</div>
+                            <img src="/ai_brain.png" alt="인지적 비계" className="ai-card-image" />
                             <h3>인지적 비계</h3>
                             <p>
                                 AI가 학생의 감상에 반응하여 추가 질문을 던지거나
@@ -143,7 +143,7 @@ function Program() {
                         </div>
 
                         <div className="card ai-card">
-                            <div className="ai-card-icon">❤️</div>
+                            <img src="/ai_heart.png" alt="정의적 비계" className="ai-card-image" />
                             <h3>정의적 비계</h3>
                             <p>
                                 학생의 해석을 시각적 결과물로 변환하여

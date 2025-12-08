@@ -88,9 +88,13 @@
     box-shadow: var(--shadow-lg);
 }
 
-.tool-icon {
-    font-size: 3.5rem;
+.tool-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: var(--border-radius-lg);
     flex-shrink: 0;
+    box-shadow: var(--shadow-sm);
 }
 
 .tool-content h3 {

@@ -109,9 +109,13 @@
     margin-bottom: var(--spacing-sm);
 }
 
-.stage-icon {
-    font-size: 4rem;
+.stage-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: var(--border-radius-xl);
     margin-bottom: var(--spacing-sm);
+    box-shadow: var(--shadow-md);
 }
 
 .stage-header h2 {
@@ -183,9 +187,13 @@
     text-align: center;
 }
 
-.ai-card-icon {
-    font-size: 3rem;
+.ai-card-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: var(--border-radius-lg);
     margin-bottom: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
 }
 
 .ai-card h3 {

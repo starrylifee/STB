@@ -67,7 +67,7 @@ function Home() {
 
                 <div className="hero-visual">
                     <div className="hero-card">
-                        <div className="hero-card-icon">🎨</div>
+                        <img src="/hero.png" alt="미술 감상" className="hero-card-image" />
                         <div className="hero-card-text">
                             미술 작품을 보고<br />
                             <span className="text-gradient">AI와 대화하며</span><br />
