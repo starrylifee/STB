@@ -184,9 +184,13 @@
     background: linear-gradient(90deg, #FFB7C5, #FF6B9D);
 }
 
-.feature-icon {
-    font-size: 3rem;
+.feature-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: var(--border-radius-lg);
     margin-bottom: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
 }
 
 .feature-card h3 {

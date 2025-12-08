@@ -4,24 +4,25 @@ import './Home.css'
 function Home() {
     const features = [
         {
-            icon: '🌱',
+            image: '/seed.png',
             title: 'SEED - 살펴봄',
             description: '작품을 관찰하고 조형 요소를 발견하는 첫 단계',
             color: 'green'
         },
         {
-            icon: '💭',
+            image: '/think.png',
             title: 'THINK - 생각해봄',
             description: 'AI와 함께 작품의 의미를 분석하고 해석하기',
             color: 'blue'
         },
         {
-            icon: '🌸',
+            image: '/bloom.png',
             title: 'BLOOM - 피워봄',
             description: '창의적 표현으로 감상의 꽃을 피우기',
             color: 'pink'
         }
     ]
+
 
     const stats = [
         { value: '3단계', label: '체계적 감상 모형' },
@@ -94,7 +95,7 @@ function Home() {
                                 className={`feature-card feature-${feature.color}`}
                                 style={{ animationDelay: `${index * 0.1}s` }}
                             >
-                                <div className="feature-icon">{feature.icon}</div>
+                                <img src={feature.image} alt={feature.title} className="feature-image" />
                                 <h3>{feature.title}</h3>
                                 <p>{feature.description}</p>
                                 <div className="feature-step">Step {index + 1}</div>
